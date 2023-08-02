@@ -30,12 +30,134 @@ $(function () {
   });
 
 
-  // $('.accordion-button').click(function(e){
-  //   e.preventDefault();
-  //   var target = $(this).attr('data-mdb-target');
-  //   $('.accordion-button').addClass('collapsed');
-  //   $(this).removeClass('collapsed');
-  //   $('.accordion-collapse').removeClass('show');
-  //   $(target).addClass('show');
-  // });
+  $(document).ready(function(){
+
+    $('#training_card').owlCarousel({
+        //loop: true,
+        margin: 20,
+        nav: true,
+        navText:[
+        '<i class="fa-solid fa-xl fa-angle-left"></i>',
+        '<i class="fa-solid fa-xl fa-angle-right"></i>'],
+        dots: true,
+        // rtl: true,
+        // autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:2
+            },
+            1024:{
+                items:3
+            },
+            1400:{
+                items:4
+            }
+        }
+    });
+    $('#upcoming_card').owlCarousel({
+        //loop: true,
+        margin: 20,
+        nav: true,
+        navText:[
+        '<i class="fa-solid fa-xl fa-angle-left"></i>',
+        '<i class="fa-solid fa-xl fa-angle-right"></i>'],
+        dots: true,
+        // rtl: true,
+        // autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1400:{
+                items:3
+            }
+        }
+    });
+    $('#city_card').owlCarousel({
+        //loop: true,
+        margin: 20,
+        nav: true,
+        navText:[
+        '<i class="fa-solid fa-xl fa-angle-left"></i>',
+        '<i class="fa-solid fa-xl fa-angle-right"></i>'],
+        dots: true,
+        // rtl: true,
+        // autoplay:true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:4
+            },
+            900:{
+                items:5
+            },
+            1400:{
+                items:7
+            }
+        }
+    });
+    $('#blog_details_carousel').owlCarousel({
+        //loop: true,
+        margin: 40,
+        nav: true,
+        items:2,
+        navText:[
+        '<i class="fa-solid fa-xl fa-angle-left"></i>',
+        '<i class="fa-solid fa-xl fa-angle-right"></i>'],
+        dots: true,
+        // rtl: true,
+        // autoplay:true,
+        autoplayTimeout:2000,
+    });
+    $('#team_work_carousel').owlCarousel({
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            900:{
+                items:4
+            },
+            1400:{
+                items:4
+            }
+        }
+    });
+    $('#customer_carousel').owlCarousel({
+        margin: 20,
+        nav: false,
+        dots: true,
+        autoplayTimeout:2000,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:3
+            },
+            900:{
+                items:5
+            },
+        }
+    });
+
+  });
+
 });

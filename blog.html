@@ -73,14 +73,14 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg shadow-sm ">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" width="120" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
           
             <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarSupportedContent">
               <ul class="navbar-nav d-flex justify-content-between">
@@ -137,13 +137,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-0 d-none d-lg-block col-lg-3">
-                    <div class="sid_filter w-100 shadow rounded-2 p-3">
+                    <div class="sid_filter w-100 shadow-sm rounded-2 mb-4 p-3">
                         <p class="font-f-semi">all category</p>
                         <div class="accordion accordion-borderless" id="collas_side">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingOneX">
-                                <button class="accordion-button font-f-semi" type="button" data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
+                                <button class="accordion-button font-f-semi" type="button"
+                                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
                                   <i class="fa-solid fa-earth-europe me-2"></i>
                                   Destinazione
                                 </button>
@@ -192,22 +192,22 @@
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingTwoX">
-                                <button class="accordion-button font-f-semi collapsed" type="button" data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseTwoX" aria-expanded="false" aria-controls="flush-collapseTwoX">
+                                <button class="accordion-button font-f-semi collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoX" aria-expanded="true" aria-controls="flush-collapseTwoX">
                                   <i class="fa-solid fa-train-subway me-2"></i> blog
                                 </button>
                               </h2>
                               <div id="flush-collapseTwoX" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoX"
                                 data-bs-parent="#collas_side">
-                                <div class="accordion-body">
+                                <div class="accordion-body ">
 
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingThreeX">
-                                <button class="accordion-button font-f-semi collapsed" type="button" data-bs-toggle="collapse"
-                                  data-bs-target="#flush-collapseThreeX" aria-expanded="false" aria-controls="flush-collapseThreeX">
+                                <button class="accordion-button font-f-semi collapsed" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeX" aria-expanded="false" aria-controls="flush-collapseThreeX">
                                   <i class="fa-solid fa-pen-ruler me-2"></i> careers
                                 </button>
                               </h2>
@@ -247,6 +247,8 @@
                               </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="sid_filter w-100 shadow-sm rounded-2 mb-4 p-3">
                         <div class="my-3">
                             <p class="font-f-semi mb-3">last post  twitter</p>
                             <div class="pe-xl-5">
@@ -878,96 +880,6 @@
     <script>
         new WOW().init();
 
-        $(document).ready(function(){
-
-            $('#upcoming_card').owlCarousel({
-                //loop: true,
-                margin: 20,
-                nav: true,
-                navText:[
-                '<i class="fa-solid fa-xl fa-angle-left"></i>',
-                '<i class="fa-solid fa-xl fa-angle-right"></i>'],
-                dots: true,
-                // rtl: true,
-                // autoplay:true,
-                autoplayTimeout:2000,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1400:{
-                        items:3
-                    }
-                }
-            });
-            $('#city_card').owlCarousel({
-                //loop: true,
-                margin: 20,
-                nav: true,
-                navText:[
-                '<i class="fa-solid fa-xl fa-angle-left"></i>',
-                '<i class="fa-solid fa-xl fa-angle-right"></i>'],
-                dots: true,
-                // rtl: true,
-                // autoplay:true,
-                autoplayTimeout:2000,
-                responsive:{
-                    0:{
-                        items:3
-                    },
-                    600:{
-                        items:4
-                    },
-                    900:{
-                        items:5
-                    },
-                    1400:{
-                        items:7
-                    }
-                }
-            });
-            $('#team_work_carousel').owlCarousel({
-                margin: 20,
-                nav: false,
-                dots: false,
-                autoplayTimeout:2000,
-                responsive:{
-                    0:{
-                        items:2
-                    },
-                    600:{
-                        items:3
-                    },
-                    900:{
-                        items:4
-                    },
-                    1400:{
-                        items:4
-                    }
-                }
-            });
-            $('#customer_carousel').owlCarousel({
-                margin: 20,
-                nav: false,
-                dots: true,
-                autoplayTimeout:2000,
-                responsive:{
-                    0:{
-                        items:3
-                    },
-                    600:{
-                        items:3
-                    },
-                    900:{
-                        items:5
-                    },
-                }
-            });
-        });
-        
     </script>
 
 </body>

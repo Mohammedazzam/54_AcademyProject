@@ -128,9 +128,16 @@ body{
 .bg-main ::placeholder{
     color: white;
 }
+.hover-bg-second:hover,
+.bg-second:focus,
+.bg-second:hover,
 .bg-second{
     background-color: var(--second-color);
     color: white;
+}
+.border_second_hover:hover{
+    border-color: var(--second-color);
+    --bs-border-color: var(--second-color);
 }
 .bg-div{
     background-color: #9DCCFF4D;
@@ -150,6 +157,10 @@ body{
 }
 .underline{
     text-decoration: underline;
+}
+.line-through{
+    text-decoration: line-through;
+    font-style: italic;
 }
 .cursor-pointer{
     cursor: pointer;
@@ -180,6 +191,9 @@ body{
 
 .rounded-top-pill{
     border-radius: 20px 20px 0 0;
+}
+.fs-7{
+    font-size: 14px;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++ End General classes ++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ------------------------------------------------ Start Index Page ------------------------------------------------------- */
@@ -350,12 +364,14 @@ footer ul li:hover{
     background-color: #9DCCFF4D;
 }
 
+.trainig_course_category #training_card .owl-nav,
 .blog_details_page #blog_details_carousel .owl-nav,
 .courses_city #city_card .owl-nav,
 .upcoming-courses #upcoming_card .owl-nav{
     text-align: right;
 }
 
+.trainig_course_category #training_card  .owl-nav  button,
 .blog_details_page #blog_details_carousel .owl-nav  button,
 .courses_city #city_card .owl-nav button,
 .upcoming-courses #upcoming_card .owl-nav button{
@@ -368,6 +384,7 @@ footer ul li:hover{
     text-align: center;
     margin: 20px 5px;
 }
+.trainig_course_category #training_card  .owl-nav button.disabled,
 .blog_details_page #blog_details_carousel .owl-nav button.disabled,
 .courses_city #city_card .owl-nav button.disabled,
 .upcoming-courses #upcoming_card .owl-nav button.disabled{
@@ -507,6 +524,9 @@ footer ul li:hover{
     background-image: url(../images/svg/chevron.svg)
 }
 /* ------------------------------------------------ End sid_filter ------------------------------------------------------- */
-/* ------------------------------------------------ Start Blog Page ------------------------------------------------------- */
+/* ------------------------------------------------ Start search_courses_page Page ------------------------------------------------------- */
+.search_courses_page .search-container .form-select.bg-claender{
+    background-image: url('../images/svg/claender2.svg');
+}
 
-/* ------------------------------------------------ End Blog Page ------------------------------------------------------- */
+/* ------------------------------------------------ End search_courses_page Page ------------------------------------------------------- */
