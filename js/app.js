@@ -30,4 +30,12 @@ $(function () {
   });
 
 
+  // $('.accordion-button').click(function(e){
+  //   e.preventDefault();
+  //   var target = $(this).attr('data-mdb-target');
+  //   $('.accordion-button').addClass('collapsed');
+  //   $(this).removeClass('collapsed');
+  //   $('.accordion-collapse').removeClass('show');
+  //   $(target).addClass('show');
+  // });
 });
