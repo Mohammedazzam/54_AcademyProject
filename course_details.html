@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>academy</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="css/owl.carousel.css"> 
+        <!-- slider css -->
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+<body>
+    <!-- start go up -->
+    <div class="scroll-top">
+        <div class="go-up">
+            <svg style="transform: rotate(180deg);" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.70312 9.54688L1.32812 3.17188C0.859375 2.70312 0.859375 2 1.32812 1.57812L2.35938 0.5C2.82812 0.078125 3.53125 0.078125 3.95312 0.5L8.45312 5.04688L13 0.5C13.4219 0.078125 14.125 0.078125 14.5938 0.5L15.625 1.57812C16.0938 2 16.0938 2.70312 15.625 3.17188L9.25 9.54688C8.82812 9.96875 8.125 9.96875 7.70312 9.54688Z" fill="#fff"/>
+            </svg>            
+        </div>
+    </div>
+    <!-- end go up -->
+    <header class="text-white d-flex align-items-center d-none d-lg-flex">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 contact">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 d-flex justify-content-around align-items-center">
+                                <a class="link transition" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="link transition" href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a class="link transition" href="#">
+                                    <i class="fa-brands fa-skype"></i>
+                                </a>
+                                <a class="link transition" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="link transition" href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                        </div>
+                        <div class="col-12 col-lg-8 d-flex flex-column flex-xl-row justify-content-around">
+                            <a href="#" class="link transition">
+                                <i class="mx-2 fa-solid fa-phone"></i>
+                                <span>(406) 555-0120</span>
+                            </a>
+                            <a href="#" class="link transition">
+                                <i class="mx-2 fa-regular fa-envelope"></i>
+                                <span>info@btadacademy.org.uk</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 d-flex align-items-center fw-bold justify-content-end">
+                    <div>
+                        <a class="link px-2 py-1 transition" href="#">SPEIAL REQUEST</a>
+                        <a class="link border-start px-2 py-1 transition" href="#">BLOG    </a>
+                        <a class="link border-start px-2 py-1 transition" href="#">FAQ</a>
+                    </div>
+                    <div class="lang ms-3">
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">العربية</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="120" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarSupportedContent">
+              <ul class="navbar-nav d-flex justify-content-between">
+                    <a data-wow-duration=".5s" data-wow-delay=".2s" class="wow fadeIn px-1 px-xxl-2 nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a data-wow-duration=".5s" data-wow-delay=".4s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Training Courses</a>
+                    <a data-wow-duration=".5s" data-wow-delay=".6s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Diploma</a>
+                    <a data-wow-duration=".5s" data-wow-delay=".8s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Master</a>
+                    <a data-wow-duration=".5s" data-wow-delay="1s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Cities</a>
+                    <a data-wow-duration=".5s" data-wow-delay="1.2s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Consulting</a>
+                    <a data-wow-duration=".5s" data-wow-delay="1.4s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">How we are</a>
+                    <a data-wow-duration=".5s" data-wow-delay="1.6s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Team Work</a>
+                    <a data-wow-duration=".5s" data-wow-delay="1.8s" class="wow fadeIn px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Contact us</a>
+              </ul>
+              <div class="d-lg-flex flex-lg-column d-xl-block">
+                <a href="#" class="btn text-gray-500 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s" >
+                    <i class="fa-solid fa-unlock-keyhole"></i>
+                    Login
+                </a>
+                <a href="#" class="btn bg-main transition wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s" >
+                    Sign up for
+                </a>
+              </div>
+            </div>    
+        </div>
+    </nav>
+
+    <!-- start page content -->
+        <!-- Modal -->
+        <div class="modal fade" id="quick_inquiry" tabindex="-1" role="dialog" aria-labelledby="quick_inquiryTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-3">
+                    <div class="modal-header border-0">
+                        <h4 class="modal-title text-main font-f-bold" id="exampleModalLongTitle">
+                            quick as inquiry
+                        </h4>
+                        <button type="button" class="close btn bg-main py-1 px-2" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-gray-500 fs-7">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique. 
+                        </p>
+                        <div class="py-2">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group my-2">
+                                            <label class="text-gray-500 fs-7">First Name</label>
+                                            <input class="form-control border-0 border-2 border-bottom rounded-0" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group my-2">
+                                            <label class="text-gray-500 fs-7">Mobile</label>
+                                            <input class="form-control border-0 border-2 border-bottom rounded-0" type="tel">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group my-2">
+                                            <label class="text-gray-500 fs-7">Email Id</label>
+                                            <input class="form-control border-0 border-2 border-bottom rounded-0" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group my-2">
+                                            <label class="text-gray-500 fs-7">Place select City From The List</label>
+                                            <select class="form-control border-0 border-2 border-bottom rounded-0">
+                                                <option value=""></option>
+                                                <option value="City">City</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group my-2">
+                                            <label class="text-gray-500 fs-7">Message</label>
+                                            <textarea class="form-control border border-2 rounded-0" placeholder="Type your Messege">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0 justify-content-start">
+                        <button type="button" class="btn bg-main">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="content course_details">
+        
+
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-0 d-none d-lg-block col-lg-3">
+                    <div class="sid_filter w-100 shadow-sm rounded-2 mb-4 p-3">
+                        <p class="font-f-semi">all category</p>
+                        <div class="accordion accordion-borderless" id="collas_side">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOneX">
+                                <button class="accordion-button font-f-semi" type="button"
+                                  data-bs-toggle="collapse" data-bs-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
+                                  <i class="fa-solid fa-earth-europe me-2"></i>
+                                  Destinazione
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOneX" class="accordion-collapse collapse show"
+                                aria-labelledby="flush-headingOneX" data-bs-parent="#collas_side">
+                                <div class="accordion-body ps-5">
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check1" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check1">Surf Camp</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check2" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check2">Adventure</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check3" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check3">Junior</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check4" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check4">Resort</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check5" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check5">Surf Lodge</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check6" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check6">Surf & Yoga</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check7" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check7">Boat Trip</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check8" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check8">Surf Resort</label>
+                                    </div>
+                                    <div class="forme-group my-2">
+                                        <input class="form-check-input" id="check9" type="checkbox" name="" id="">
+                                        <label class="form-check-label form" for="check9">Viaggio di Gruppo</label>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwoX">
+                                <button class="accordion-button font-f-semi collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoX" aria-expanded="true" aria-controls="flush-collapseTwoX">
+                                  <i class="fa-solid fa-train-subway me-2"></i> blog
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwoX" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoX"
+                                data-bs-parent="#collas_side">
+                                <div class="accordion-body ">
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThreeX">
+                                <button class="accordion-button font-f-semi collapsed" type="button" 
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeX" aria-expanded="false" aria-controls="flush-collapseThreeX">
+                                  <i class="fa-solid fa-pen-ruler me-2"></i> careers
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThreeX" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeX"
+                                data-bs-parent="#collas_side">
+                                <div class="accordion-body">
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingFourX">
+                                <button class="accordion-button font-f-semi collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseFourX" aria-expanded="false" aria-controls="flush-collapseThreeX">
+                                  <i class="fa-solid fa-photo-film me-2"></i> video
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFourX" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeX"
+                                data-bs-parent="#collas_side">
+                                <div class="accordion-body">
+
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingFiveX">
+                                <button class="accordion-button font-f-semi collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#flush-collapseFiveX" aria-expanded="false" aria-controls="flush-collapseThreeX">
+                                  <i class="fa-brands fa-adversal me-2"></i> advertisement
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFiveX" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeX"
+                                data-bs-parent="#collas_side">
+                                <div class="accordion-body">
+
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sid_filter w-100 shadow-sm rounded-2 mb-4 p-3">
+                        <div class="my-3">
+                            <p class="font-f-semi mb-3">all category</p>
+                            <div class="pe-xl-5">
+                                <a href="#" class="link my-3 d-flex justify-content-between align-items-center">
+                                    Business
+                                    <span class="border border-dark border-opacity-25 border-2 p-1 text-gray-500">
+                                        05
+                                    </span>
+                                </a>
+                                <a href="#" class="link my-3 d-flex justify-content-between align-items-center">
+                                    introduction
+                                    <span class="border border-dark border-opacity-25 border-2 p-1 text-gray-500">
+                                        33
+                                    </span>
+                                </a>
+                                <a href="#" class="link my-3 d-flex justify-content-between align-items-center">
+                                    technical
+                                    <span class="border border-dark border-opacity-25 border-2 p-1 text-gray-500">
+                                        30
+                                    </span>
+                                </a>
+                                <a href="#" class="link my-3 d-flex justify-content-between align-items-center">
+                                    power
+                                    <span class="border border-dark border-opacity-25 border-2 p-1 text-gray-500">
+                                        20
+                                    </span>
+                                </a>
+                                <a href="#" class="link my-3 d-flex justify-content-between align-items-center">
+                                    Business
+                                    <span class="border border-dark border-opacity-25 border-2 p-1 text-gray-500">
+                                        36
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sid_filter w-100 shadow-sm rounded-2 mb-4 p-3">
+                        <div class="my-3">
+                            <p class="font-f-semi mb-3">all tags</p>
+                            <div class="p-1 d-flex flex-wrap">
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Business</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Graphic Design</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Technology</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Business Idea</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">App Development</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Website Design</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Business Idea</a>
+                                <a href="#" class="link bg-warning bg-opacity-10 px-1 m-1">Business</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="mb-5">
+                        <div class="row">
+                            <div class="col-7 col-xl-7">
+                                <div class="mb-5">
+                                    <h3 class="font-f-semi text-main mb-4">
+                                        project management course
+                                    </h3>
+                                    <div class="bg-div rounded-pill p-2 d-flex justify-content-around">
+                                        <a href="#" class="link transition bg-div hover-bg-main rounded-pill py-2 px-1 px-xl-3 px-xxl-4">
+                                            request course
+                                        </a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#quick_inquiry" class="link transition bg-div hover-bg-main rounded-pill py-2 px-1 px-xl-3 px-xxl-4">
+                                            Quick inquiry
+                                        </a>
+                                        <a href="#" class="link transition bg-div hover-bg-main rounded-pill py-2 px-1 px-xl-3 px-xxl-4">
+                                            download pdf
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mb-5">
+                                    <h3 class="font-f-semi text-main mb-4">
+                                        summary
+                                    </h3>
+                                    <p class="text-gray-500">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmod
+                                    </p>
+                                </div>
+                                <div class="mb-5">
+                                    <h3 class="font-f-semi text-main mb-4">
+                                        Objectives and target group
+                                    </h3>
+                                    <p class="text-gray-500">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmod
+                                    </p>
+                                </div>
+                                <div class="mb-5">
+                                    <h3 class="font-f-semi text-main mb-4">
+                                        Course Content
+                                    </h3>
+                                    <p class="text-gray-500">
+                                        Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmod
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-4 col-xl-4 pt-5">
+                                <div class="bg-div rounded-2 overflow-hidden">
+                                    <div class="p-2">
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Price
+                                            </span>
+                                            <span class="p-1 text-danger">
+                                                $49.00
+                                            </span>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Instructor
+                                            </span>
+                                            <a href="#" class="link p-1 text-main text-end underline">
+                                                Wade Warren
+                                            </a>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Ratings
+                                            </span>
+                                            <div class=" p-1 text-white">
+                                                <i class="fa-solid fa-star text-gold"></i>
+                                                <i class="fa-solid fa-star text-gold"></i>
+                                                <i class="fa-solid fa-star text-gold"></i>
+                                                <i class="fa-solid fa-star text-gold"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Durations
+                                            </span>
+                                            <a href="#" class="link p-1 text-main">
+                                                10 Days
+                                            </a>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Lessons
+                                            </span>
+                                            <a href="#" class="link p-1 text-main">
+                                                30
+                                            </a>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Quizzes
+                                            </span>
+                                            <a href="#" class="link p-1 text-main">
+                                                5
+                                            </a>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Certificate
+                                            </span>
+                                            <a href="#" class="link p-1 text-main">
+                                                Yes
+                                            </a>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Language
+                                            </span>
+                                            <a href="#" class="link p-1 text-main">
+                                                English
+                                            </a>
+                                        </div>
+                                        <div class="my-2 p-1 d-flex justify-content-between align-items-center">
+                                            <span class="text-gray-500">
+                                                Access
+                                            </span>
+                                            <a href="#" class="link p-1 text-main">
+                                                Lifetime
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="link d-block bg-main text-center py-3">
+                                        Register Now 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="my-5">
+                            <h3 class="font-f-semi text-main mb-4">
+                                Course Date
+                            </h3>
+                            <div class="row">
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <div class="bg-div rounded-4 py-2 px-3">
+                                        <div class="date text-main mt-2">
+                                            <i class="fa-regular fa-calendar-days me-3"></i>
+                                            2020-12-30
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-6 px-1">
+                                                <select class="form-select rounded-4 bg-white text-main text-center my-1" id="" required>
+                                                    <option selected disabled value="">place</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 px-1">
+                                                <button class="btn rounded-4 my-1 w-100 bg-main">Register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xl-3 my-2">
+                                    <a href="#" class="link rounded-4 h-100 border border-2 border_color_main border_dashed border_second_hover hover-text-second py-2 px-3 d-flex flex-column align-items-center justify-content-center">
+                                        <i class="fa-regular fa-2x fa-circle-xmark" style="transform: rotate(45deg);"></i>
+                                        <p class="m-0 mt-2 text-gray-500 fs-7">Add a new date</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <section class="my-5">
+            <div class="container trainig_course_category">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="text-main font-f-bold">
+                        Similar courses
+                    </h4>
+                    <h6 class="text-second font-f-semi">
+                        <a class="link" href="#">See all</a>
+                    </h6>
+                </div>
+                <div id="training_card" class="owl-carousel owl-theme">
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="card shadow my-3 border-0 wow bounceIn" data-wow-delay=".4s">
+                        <div class="p-3 pb-0">
+                            <img  class="card-img" height="200px" src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex fs-7 my-2 align-items-center justify-content-between">
+                                <div class="text-gray-500">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    <span>Design</span>
+                                </div>
+                                <div class="text-gray-500">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>3 Month</span>
+                                </div>
+                            </div>
+                            <h5 class="text-main font-f-semi">
+                                project management program
+                            </h5>
+                            <p class="card-text text-gray-500">
+                                Short professional diploma in journalism and media versions have evolved daf
+                            </p>
+                            <div class="my-2 d-flex justify-content-end align-items-center">
+                                <span class="mx-2 discount text-gray-500 line-through">$ 100</span>
+                                <span class="mx-2 fs-5 text-main font-f-bold">$ 80</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    details
+                                </a>
+                                <a href="#" class="link px-4 btn bg-main text-white">
+                                    register
+                                </a>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-4">
+                    <img class="d-block  m-auto ms-lg-1" src="images/logo.png" width="120px" alt="">
+                    <p class="mt-2 text-black-333 text-justify">
+                        The British Academy for Training and Development is a British institution specialized in the training and development of human and institutional staff in the areas of management, business management, media, public relations, information technology, public health and other related disciplines.
+                    </p>
+                    <div class="social-links my-3 mx-auto ms-lg-1">
+                        <a href="#" class="link text-white text-center facebook">
+                            <i class="fa-brands fa-lg fa-facebook-f"></i>                                  
+                        </a>
+                        <a href="#" class="link text-white text-center linkedin">
+                            <i class="fa-brands fa-lg fa-linkedin-in"></i>                         
+                        </a>
+                        <a href="#" class="link text-white text-center twitter">
+                            <i class="fa-brands fa-lg fa-twitter"></i>                                  
+                        </a>
+                        <a href="#" class="link text-white text-center inestgram">
+                            <i class="fa-brands fa-lg fa-instagram"></i>
+                        </a>
+                        <a href="#" class="link text-white text-center youtube">
+                            <i class="fa-brands fa-lg fa-youtube"></i>                                   
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <strong class="text-main text-start w-100 d-block">About</strong>
+                            <ul>
+                                <li><a href="#" class="link">About Us</a></li>
+                                <li><a href="#" class="link">Features</a></li>
+                                <li><a href="#" class="link">News</a></li>
+                                <li><a href="#" class="link">Menu</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <strong class="text-main text-start w-100 d-block">Company</strong>
+                            <ul>
+                                <li><a href="#" class="link">Why 2rism</a></li>
+                                <li><a href="#" class="link">Partner With Us</a></li>
+                                <li><a href="#" class="link">FAQ</a></li>
+                                <li><a href="#" class="link">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <strong class="text-main text-start w-100 d-block">Support</strong>
+                            <ul>
+                                <li><a href="#" class="link">Account</a></li>
+                                <li><a href="#" class="link">Support Center</a></li>
+                                <li><a href="#" class="link">Feedback</a></li>
+                                <li><a href="#" class="link">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h5 class="my-3 text-main">
+                        2023 - Copyright © All Rights Reserved By British Academy. | 
+                        <a href="#" class="link underline">Created by Shiftict</a>
+                    </h5>
+                    <form action="">
+                        <div class="row send_mail">
+                            <div class="col-10 send_mail_input">
+                                <i class="fa-regular fa-2x fa-envelope"></i>
+                                <label class="text-gray-500">Your Email</label>
+                                <input autocomplete="off" class="form-control ps-5" type="mail" name="mail" placeholder="info@btadacademy.org.uk">
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-danger p-4" style="border-radius: 16px;">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>
