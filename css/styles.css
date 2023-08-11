@@ -215,13 +215,17 @@ body{
 .fs-7{
     font-size: 14px;
 }
+.fs-8{
+    font-size: 12px;
+}
+
 /* ++++++++++++++++++++++++++++++++++++++++++ End General classes ++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ------------------------------------------------ Start Index Page ------------------------------------------------------- */
 /* start header */
 header{
     background: rgb(177,46,51);
     background: linear-gradient(45deg, rgba(177,46,51,1) 45%, rgba(21,39,101,1) 45%);
-    min-height: 57px;
+    height: 40px;
     font-size: 13px;
 }
 
@@ -237,6 +241,20 @@ header select{
 /* end header */
 
 /* start navbar */
+nav.navbar{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    transition: all .1s ease-in-out;
+    --bs-navbar-padding-y: .2rem
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+nav.navbar.nav_fixed{
+    top: 0;
+}
 nav .nav-link{
     font-size: 16px;
     min-width: fit-content;
@@ -272,11 +290,11 @@ footer ul li:hover{
     width: fit-content;
 }
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     border-radius: 50%;
-    padding: 8px 0;
+    padding: 4px 0;
     margin: 0 3px;
     transition: all .1s ease-in-out;
 }
@@ -334,25 +352,26 @@ footer ul li:hover{
     /* min-height: 80vh; */
 }
 .main-section h2{
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'poppins_bold';
 }
 
 .main-section .service_card{
     background-color: white;
-    padding: 20px;
-    border-radius: 40px;
+    padding: 10px;
+    border-radius: 25px;
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
     cursor: pointer;
     transition: all .2s ease-in-out;
+    height: 170px;
 }
 .main-section .service_card:hover{
     transform: translateY(-15px);
 }
 .main-section .service_card .svg-cont{
     background-color: #FFF7E3;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
     margin-bottom: 10px;
 }
 /* end main-section */
@@ -379,7 +398,15 @@ footer ul li:hover{
     border-radius: 16px;
 
 }
-
+.what-is .card{
+    height: 90px;
+    align-items: center;
+}
+.what-is .card:hover{
+    background-color: #f9f9f9;
+}
+.what-is .card img{height: 70px;}
+.what-is .card p.card-text{font-size: 14px;}
 .upcoming-courses .bg-section{
     background-color: #9DCCFF4D;
 }
@@ -396,13 +423,13 @@ footer ul li:hover{
 .courses_city #city_card .owl-nav button,
 .upcoming-courses #upcoming_card .owl-nav button{
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 3px;
     background-color: var(--main-color);
     color: white;
     text-align: center;
-    margin: 20px 5px;
+    margin: 15px 5px;
 }
 .trainig_course_category #training_card  .owl-nav button.disabled,
 .blog_details_page #blog_details_carousel .owl-nav button.disabled,
@@ -419,7 +446,7 @@ footer ul li:hover{
     /* margin-top: 80px; */
 }
 .courses_spacializ .category_div{
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -432,6 +459,7 @@ footer ul li:hover{
     background-color: var(--main-color);
     color: white;
 }
+
 /* end courses spacialize */
 
 /* start latest publications  */
@@ -550,3 +578,61 @@ footer ul li:hover{
 }
 
 /* ------------------------------------------------ End search_courses_page Page ------------------------------------------------------- */
+/* ------------------------------------------------ start plan Page ------------------------------------------------------- */
+.plan_page .rounded_triangle{
+    width: 100%;
+    height: 400px;
+    border-radius: 0 7rem 0 50%;
+    overflow: hidden;
+}
+.plan_page .larg_num{
+    font-size: 120px;
+}
+/* ------------------------------------------------ End plan Page ------------------------------------------------------- */
+/* ------------------------------------------------ strat login Page ------------------------------------------------------- */
+.login_page .change_log{
+    cursor: pointer;
+}
+.login_page .change_log.active{
+    background-color: #ffffff12;
+}
+/* ------------------------------------------------ End login Page ------------------------------------------------------- */
+/* ------------------------------------------------ Start SEO Page ------------------------------------------------------- */
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+    display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+    display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+    font-weight: bold;
+    margin-left: 2px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+    display: block;
+}
+
+.more li:not(:nth-of-type(1)) {
+    text-align: left !important;
+    display: none;
+}
+
+.more.main li:not(:first-of-type){
+    display: list-item;
+}
+
+.more-less {
+    font-weight: bold;
+    margin-left: 2px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* ------------------------------------------------ End SEO Page ------------------------------------------------------- */
