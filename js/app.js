@@ -15,10 +15,12 @@ $(function () {
     var header_h = $('header').height();
     var nav_h = $('nav.navbar').height();
     $('.content').css('margin-top', nav_h);
-
+    if ($(window).width() < 990) {
+        $('nav.navbar').addClass('nav_fixed');
+    }
     $(window).scroll(function () {
         var clickToScroll = $('.scroll-top');
-        if ($(window).scrollTop() > header_h) {
+        if ($(window).scrollTop() > header_h || $(window).width() < 990) {
             $('nav.navbar').addClass('nav_fixed');
         } else {
             $('nav.navbar').removeClass('nav_fixed');
@@ -36,6 +38,21 @@ $(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $('.latest-contect').fadeOut().removeClass('active');
         $('#' + target).fadeIn();
+    });
+
+    $('.category_div').on('click', function (e) {
+        e.preventDefault();
+        var target = $(this).attr('data-target');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.upcoming_content').fadeOut('100').removeClass('active');
+        $(target).fadeIn().addClass('active');
+    });
+    $('.payment_card').on('click', function (e) {
+        e.preventDefault();
+        var target = $(this).attr('data-target');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.payment_form').fadeOut('100').removeClass('active');
+        $(target).fadeIn().addClass('active');
     });
 
     $('.get-login').on('click', function () {

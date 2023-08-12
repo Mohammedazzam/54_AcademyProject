@@ -198,6 +198,7 @@ body{
     --bs-btn-disabled-border-color: var(--main-color);
     --bs-gradient: none;
 }
+.hover_scale,
 .hover_shadow,
 .hover_move_top{
     transition: all .2s ease-in-out;
@@ -208,7 +209,9 @@ body{
 .hover_shadow:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
-
+.hover_scale:hover{
+    transform: scale(1.025);
+}
 .rounded-top-pill{
     border-radius: 20px 20px 0 0;
 }
@@ -356,7 +359,7 @@ footer ul li:hover{
     font-family: 'poppins_bold';
 }
 
-.main-section .service_card{
+.service_card{
     background-color: white;
     padding: 10px;
     border-radius: 25px;
@@ -365,10 +368,10 @@ footer ul li:hover{
     transition: all .2s ease-in-out;
     height: 170px;
 }
-.main-section .service_card:hover{
+.service_card:hover{
     transform: translateY(-15px);
 }
-.main-section .service_card .svg-cont{
+.service_card .svg-cont{
     background-color: #FFF7E3;
     border-radius: 10px;
     padding: 5px;
@@ -423,8 +426,8 @@ footer ul li:hover{
 .courses_city #city_card .owl-nav button,
 .upcoming-courses #upcoming_card .owl-nav button{
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 3px;
     background-color: var(--main-color);
     color: white;
@@ -441,6 +444,9 @@ footer ul li:hover{
 /* end upcoming-coursessection */
 
 /* start courses spacialize */
+.upcoming_content:not(.active){
+    display: none;
+}
 .courses_spacializ .category_div_container {
     border-right: 3px solid var(--main-color);
     /* margin-top: 80px; */
@@ -636,3 +642,53 @@ footer ul li:hover{
     cursor: pointer;
 }
 /* ------------------------------------------------ End SEO Page ------------------------------------------------------- */
+/* ------------------------------------------------ Start payment Page ------------------------------------------------------- */
+.payment_card{
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+.payment_card.active{
+    border-color: var(--main-color);
+}
+.payment_form:not(.active){
+    display: none;
+}
+/* ------------------------------------------------ End payment Page ------------------------------------------------------- */
+
+
+/* start svg animation */
+.round{
+    animation: bounce 3s infinite ease-out alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+.jump{
+    animation: jump 3s infinite ease-out alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes bounce{
+    0%{
+        transform: rotate(-18deg);
+    }
+    50%{
+        transform: rotate(18deg);
+    }
+    100%{
+        transform: rotate(-18deg);
+    }
+}
+@keyframes jump{
+    0%{
+        transform: translateY(-18px);
+    }
+    50%{
+        transform: translateY(18px);
+    }
+    100%{
+        transform: translateY(-18px);
+    }
+}
+/* end svg animation */

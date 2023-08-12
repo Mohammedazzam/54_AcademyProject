@@ -138,50 +138,186 @@
                         <h3 class="text-center font-f-semi">Checkout</h3>
                         <h6 class="text-center font-f-semi fs-7">Cart Type</h6>
                         <div class="d-flex justify-content-around my-2">
-                            <div class="payment_card rounded-4 border border-2 w-25 text-center mx-2 overflow-hidden">
+                            <div data-target="#target1"
+                                class="payment_card active rounded-4 w-25 text-center mx-2 overflow-hidden">
                                 <img height="100" src="images/cards/Paypal.png" alt="">
                             </div>
-                            <div class="payment_card rounded-4 border border-2 w-25 text-center mx-2 overflow-hidden">
+                            <div data-target="#target2"
+                                class="payment_card rounded-4 w-25 text-center mx-2 overflow-hidden">
                                 <img height="100" src="images/cards/visa-logo-png-2020.png" alt="">
                             </div>
-                            <div class="payment_card rounded-4 border border-2 w-25 text-center mx-2 overflow-hidden">
+                            <div data-target="#target3"
+                                class="payment_card rounded-4 w-25 text-center mx-2 overflow-hidden">
                                 <img height="100" src="images/cards/am_amex.png" alt="" srcset="">
                             </div>
-                            <div class="payment_card rounded-4 border border-2 w-25 text-center mx-2 overflow-hidden">
+                            <div data-target="#target4"
+                                class="payment_card rounded-4 w-25 text-center mx-2 overflow-hidden">
                                 <img height="100" src="images/cards/mastercard-26161.png" alt="">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 my-1">
-                                <label class="text-gray-500 font-f-semi fs-7">Name on Card</label>
-                                <input class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
-                                    type="text" name="" id="" placeholder="Enter name on Card">
-                            </div>
-                            <div class="col-12 my-1">
-                                <label class="text-gray-500 font-f-semi fs-7">Card Number</label>
-                                <input class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
-                                    type="text" name="" id="" placeholder="Enter Card Number">
-                            </div>
-                            <div class="col-6 my-1">
-                                <label class="text-gray-500 font-f-semi fs-7">Expiration Date ( MM/YY )</label>
-                                <input class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
-                                    type="month" name="" id="" placeholder="Expiration Date ( MM/YY )">
-                            </div>
-                            <div class="col-6 my-1">
-                                <label class="text-gray-500 font-f-semi fs-7">CVC</label>
-                                <input class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
-                                    type="number" name="" id="" placeholder="Enter CVC">
-                            </div>
-                            <div class="col-12">
-                                <input type="checkbox" name="" id="checkbox1" class="form-check-input py-2 m-1">
-                                <label for="checkbox1" class="text-gray-500 font-f-semi fs-7">Save my information for
-                                    faster checkout</label>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-lg btn-primary w-100 my-2">
-                                    Confirm Payment
-                                </button>
-                            </div>
+                        <div id="target1" class="payment_form active">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Name on Card</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter name on Card">
+                                    </div>
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Card Number</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter Card Number">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Expiration Date ( MM/YY )</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="month" name="" id="" placeholder="Expiration Date ( MM/YY )">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">CVC</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="number" name="" id="" placeholder="Enter CVC">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="checkbox" name="" id="checkbox1" class="form-check-input py-2 m-1">
+                                        <label for="checkbox1" class="text-gray-500 font-f-semi fs-7">Save my
+                                            information for
+                                            faster checkout</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-lg btn-primary w-100 my-2">
+                                            Confirm Payment
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="target2" class="payment_form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Name on Card</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter name on Card">
+                                    </div>
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Card Number</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter Card Number">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Expiration Date ( MM/YY )</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="month" name="" id="" placeholder="Expiration Date ( MM/YY )">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">CVC</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="number" name="" id="" placeholder="Enter CVC">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="checkbox" name="" id="checkbox1" class="form-check-input py-2 m-1">
+                                        <label for="checkbox1" class="text-gray-500 font-f-semi fs-7">Save my
+                                            information for
+                                            faster checkout</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-lg btn-primary w-100 my-2">
+                                            Confirm Payment
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="target3" class="payment_form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Name on Card</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter name on Card">
+                                    </div>
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Card Number</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter Card Number">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Expiration Date ( MM/YY )</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="month" name="" id="" placeholder="Expiration Date ( MM/YY )">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">CVC</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="number" name="" id="" placeholder="Enter CVC">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="checkbox" name="" id="checkbox1" class="form-check-input py-2 m-1">
+                                        <label for="checkbox1" class="text-gray-500 font-f-semi fs-7">Save my
+                                            information for
+                                            faster checkout</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-lg btn-primary w-100 my-2">
+                                            Confirm Payment
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="target4" class="payment_form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Name on Card</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter name on Card">
+                                    </div>
+                                    <div class="col-12 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Card Number</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="text" name="" id="" placeholder="Enter Card Number">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">Expiration Date ( MM/YY )</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="month" name="" id="" placeholder="Expiration Date ( MM/YY )">
+                                    </div>
+                                    <div class="col-6 my-1">
+                                        <label class="text-gray-500 font-f-semi fs-7">CVC</label>
+                                        <input
+                                            class="form-control w-100 py-2 bg-gray-100 border-0 my-1 placeholder-gray-100"
+                                            type="number" name="" id="" placeholder="Enter CVC">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="checkbox" name="" id="checkbox1" class="form-check-input py-2 m-1">
+                                        <label for="checkbox1" class="text-gray-500 font-f-semi fs-7">Save my
+                                            information for
+                                            faster checkout</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-lg btn-primary w-100 my-2">
+                                            Confirm Payment
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

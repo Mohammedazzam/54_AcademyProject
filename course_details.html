@@ -200,6 +200,45 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="add_date" tabindex="-1" role="dialog" aria-labelledby="add_dateTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title text-main font-f-bold" id="exampleModalLongTitle">
+                        Add New Date
+                    </h4>
+                    <button type="button" class="close btn bg-main py-1 px-2" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-xmark"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-gray-500 fs-7">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum
+                        tristique.
+                    </p>
+                    <div class="py-2">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group my-2">
+                                        <label class="text-gray-500 fs-7">Date</label>
+                                        <input class="form-control border-0 border-2 border-bottom rounded-0"
+                                            type="date">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-start">
+                    <button type="button" class="btn bg-main">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="content course_details">
@@ -679,8 +718,8 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4 col-xl-3 my-2">
-                                    <a href="#"
-                                        class="link rounded-4 h-100 border border-2 border_color_main border_dashed border_second_hover hover-text-second py-2 px-3 d-flex flex-column align-items-center justify-content-center">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#add_date"
+                                        class="link add_date rounded-4 h-100 border border-2 border_color_main border_dashed border_second_hover hover-text-second py-2 px-3 d-flex flex-column align-items-center justify-content-center">
                                         <i class="fa-regular fa-2x fa-circle-xmark"
                                             style="transform: rotate(45deg);"></i>
                                         <p class="m-0 mt-2 text-gray-500 fs-7">Add a new date</p>
