@@ -32,6 +32,12 @@ $(function () {
         } else { clickToScroll.fadeOut(500); }
     });
 
+    // loadScreen
+    $(document).ready(function () {
+        $('.load_secreen').delay(1500).fadeOut();
+    });
+
+
     $('.publicat').on('click', function (e) {
         e.preventDefault();
         var target = $(this).attr('datat-latest');
