@@ -22,8 +22,12 @@ $(function () {
         var clickToScroll = $('.scroll-top');
         if ($(window).scrollTop() > header_h || $(window).width() < 990) {
             $('nav.navbar').addClass('nav_fixed');
+            $('.scroll_logo.scroll_hide').addClass('d-none');
+            $('.scroll_logo.scroll_show').removeClass('d-none');
         } else {
             $('nav.navbar').removeClass('nav_fixed');
+            $('.scroll_logo.scroll_hide').removeClass('d-none');
+            $('.scroll_logo.scroll_show').addClass('d-none');
         }
         if ($(window).scrollTop() > 600) {
             if (clickToScroll.is(':hidden')) {
@@ -36,6 +40,21 @@ $(function () {
     $(document).ready(function () {
         $('.load_secreen').delay(1500).fadeOut();
     });
+
+
+    // change_dir ------------------------------>> this code must be removed after add lang
+    $('.change_dir').change(function () {
+        var dir = $(this).val();
+        var lang = dir == 'rtl' ? 'ar' : 'en';
+        $('html').css('direction', dir).attr('lang', lang);
+        $('link.set-dir').attr('disabled', true);
+        $('link.dir_' + dir).attr('disabled', false);
+        $('.change_dir option').attr('selected', '');
+        $('.change_dir option[nalue="' + dir + '"').attr('selected', 'selected');
+    });
+
+    //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 
     $('.publicat').on('click', function (e) {

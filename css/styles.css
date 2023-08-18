@@ -13,6 +13,20 @@
     src: url("Fonts/Poppins-SemiBold.ttf");
 }
 
+@font-face {
+    font-family: play_bold;
+    src: url("Fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: play_reg;
+    src: url("Fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: play_semi;
+    src: url("Fonts/PlayfairDisplay-SemiBold.ttf");
+}
 /* Start Local */
 ::-webkit-scrollbar {
     width: 5px;
@@ -38,11 +52,13 @@
 }
 
 body{
-    font-family: 'poppins_reg';
+    font-family: 'play_reg';
     position: relative;
     overflow-x: hidden;
 }
-
+p{
+    font-family: 'play_reg';
+}
 .scroll-top {
     position: fixed;
     bottom: 50px;
@@ -67,10 +83,10 @@ body{
     opacity: .9;
 }
 .font-f-bold{
-    font-family: 'poppins_bold';
+    font-family: 'play_bold';
 }
 .font-f-semi{
-    font-family: 'poppins_semi';
+    font-family: 'play_semi';
 }
 .bg-img{
     background-repeat: no-repeat;
@@ -179,6 +195,9 @@ background: #d5d5d568;
 }
 .link:hover{
     color: inherit;
+}
+.ltr{
+    direction: ltr;
 }
 .text-white{
     color: white;
@@ -312,7 +331,7 @@ header{
 }
 
 header .contact .link:hover{
-    color: var(--main-color);
+    color: #a0a0a0
 }
 header select{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -340,6 +359,7 @@ nav.navbar.nav_fixed{
 nav .nav-link{
     font-size: 16px;
     min-width: fit-content;
+    color: var(--bs-nav-link-color);
 }
 nav .nav-link.active{
     color: var(--main-color) !important;
@@ -363,7 +383,7 @@ footer ul{
 footer ul li{
     line-height: 1.6rem;
     color: var(--main-color);
-    text-align: left;
+    text-align: right;
 }
 footer ul li:hover{
     text-decoration: underline;
@@ -411,15 +431,16 @@ footer ul li:hover{
 .send_mail .send_mail_input i{
     position: absolute;
     top: 50%;
-    left: 20px;
+    /* left: 20px; */
     color: #FFA800;
     transform: translateY(-50%);
+    width: fit-content;
 }
-.send_mail .send_mail_input label{
+/* .send_mail .send_mail_input label{
     position: absolute;
     top: 10%;
     left: 60px;
-}
+} */
 .send_mail input{
     height: 72px;
     width: 100%;
@@ -435,7 +456,7 @@ footer ul li:hover{
 }
 .main-section h2{
     font-size: 35px;
-    font-family: 'poppins_bold';
+    font-family: 'play_bold';
 }
 
 .service_card{
@@ -498,6 +519,7 @@ footer ul li:hover{
 .courses_city #city_card .owl-nav,
 .upcoming-courses #upcoming_card .owl-nav{
     text-align: right;
+    direction: ltr;
 }
 
 .trainig_course_category #training_card  .owl-nav  button,
@@ -706,7 +728,7 @@ footer ul li:hover{
 }
 
 .more li:not(:nth-of-type(1)) {
-    text-align: left !important;
+    /* text-align: left !important; */
     display: none;
 }
 

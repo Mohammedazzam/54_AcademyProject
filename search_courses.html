@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link class="dir_ltr set-dir" rel="stylesheet" href="css/bootstrap.min.css">
+    <link class="dir_rtl set-dir" disabled rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <!-- slider css -->
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -69,13 +68,13 @@
                 <div class="col-12 col-md-7 d-flex align-items-center fw-bold justify-content-end">
                     <div>
                         <a class="link px-2 py-1 transition" href="#">SPEIAL REQUEST</a>
-                        <a class="link border-start px-2 py-1 transition" href="#">BLOG </a>
-                        <a class="link border-start px-2 py-1 transition" href="#">FAQ</a>
+                        <a class="link border-start px-2 py-1 transition" href="blog.html">BLOG </a>
+                        <a class="link border-start px-2 py-1 transition" href="FAQ.html">FAQ</a>
                     </div>
                     <div class="lang ms-3">
-                        <select class="form-select py-1">
-                            <option selected disabled value="">العربية</option>
-                            <option>...</option>
+                        <select class="form-select py-1 change_dir">
+                            <option selected value="rtl">العربية</option>
+                            <option value="ltr">English</option>
                         </select>
                     </div>
                 </div>
@@ -83,10 +82,12 @@
         </div>
     </header>
 
+
     <nav class="navbar navbar-expand-lg shadow-sm ">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" width="120" alt="">
+                <img class="scroll_logo scroll_hide" src="images/logo.png" width="100" alt="">
+                <img class="d-none scroll_logo scroll_show" src="images/logo2.png" width="100" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -96,32 +97,23 @@
 
             <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav d-flex justify-content-between">
-                    <a data-wow-duration=".5s" data-wow-delay=".2s" class="wow fadeIn px-1 px-xxl-2 nav-link active"
-                        aria-current="page" href="index.html">Home</a>
-                    <a data-wow-duration=".5s" data-wow-delay=".4s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Training Courses</a>
-                    <a data-wow-duration=".5s" data-wow-delay=".6s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Diploma</a>
-                    <a data-wow-duration=".5s" data-wow-delay=".8s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Master</a>
-                    <a data-wow-duration=".5s" data-wow-delay="1s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Cities</a>
-                    <a data-wow-duration=".5s" data-wow-delay="1.2s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Consulting</a>
-                    <a data-wow-duration=".5s" data-wow-delay="1.4s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">How we are</a>
-                    <a data-wow-duration=".5s" data-wow-delay="1.6s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Team Work</a>
-                    <a data-wow-duration=".5s" data-wow-delay="1.8s" class="wow fadeIn px-1 px-xxl-2 nav-link"
-                        aria-current="page" href="index.html">Contact us</a>
+                    <a class="px-1 px-xxl-2 nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="trainig_course_category.html">Training
+                        Courses</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Diploma</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Master</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="citys.html">Cities</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Consulting</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">How we are</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="index.html">Team Work</a>
+                    <a class="px-1 px-xxl-2 nav-link" aria-current="page" href="contact.html">Contact us</a>
                 </ul>
                 <div class="d-lg-flex flex-lg-column d-xl-block">
-                    <a href="#" class="btn text-gray-500 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+                    <a href="login.html" class="btn text-gray-500 ">
                         <i class="fa-solid fa-unlock-keyhole"></i>
                         Login
                     </a>
-                    <a href="#" class="btn bg-main transition wow fadeInUp" data-wow-duration=".5s"
-                        data-wow-delay=".2s">
+                    <a href="login.html" class="btn fs-8 bg-main transition">
                         Sign up for
                     </a>
                 </div>
@@ -402,7 +394,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -447,7 +439,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -492,7 +484,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -539,7 +531,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -584,7 +576,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -631,7 +623,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -678,7 +670,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -723,7 +715,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -770,7 +762,7 @@
                                             <a href="#" class="link btn bg-second text-white">
                                                 registration
                                             </a>
-                                            <a href="#" class="link px-4 btn bg-second text-white">
+                                            <a href="course_details.html" class="link px-4 btn bg-second text-white">
                                                 details
                                             </a>
                                         </div>
@@ -822,12 +814,13 @@
 
     </div>
 
+
     <footer>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-4">
-                    <img class="d-block  m-auto ms-lg-1" src="images/logo.png" width="120px" alt="">
-                    <p class="mt-2 text-black-333">
+                    <img class="d-block  m-auto  ms-lg-1" src="images/logo.png" width="120px" alt="">
+                    <p class="mt-2 text-black-333 text-justify">
                         The British Academy for Training and Development is a British institution specialized in the
                         training and development of human and institutional staff in the areas of management, business
                         management, media, public relations, information technology, public health and other related
@@ -891,13 +884,13 @@
                     <form action="">
                         <div class="row send_mail">
                             <div class="col-10 send_mail_input">
-                                <i class="fa-regular fa-2x fa-envelope"></i>
-                                <label class="text-gray-500">Your Email</label>
+                                <i class="fa-regular fa-2x fa-envelope start-0 ms-4"></i>
+                                <label class="text-gray-500 position-absolute top-0 start-0 ms-5">Your Email</label>
                                 <input autocomplete="off" class="form-control ps-5" type="mail" name="mail"
                                     placeholder="info@btadacademy.org.uk">
                             </div>
                             <div class="col-2">
-                                <button class="btn btn-danger p-4" style="border-radius: 16px;">
+                                <button class="btn btn-danger p-4 rounded-4">
                                     <i class="fa-solid fa-arrow-right-long"></i>
                                 </button>
                             </div>
@@ -907,6 +900,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
