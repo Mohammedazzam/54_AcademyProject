@@ -136,6 +136,16 @@ $(function () {
     //   start carousle 
     $(document).ready(function () {
 
+        $('#main_slider').owlCarousel({
+            //loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            items: 1,
+            loop: true,
+            autoplay:true,
+            autoplayTimeout: 2000,
+        });
         $('#training_card').owlCarousel({
             //loop: true,
             margin: 20,

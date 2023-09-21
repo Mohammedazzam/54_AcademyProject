@@ -40,12 +40,12 @@
                         <div class="text-center">
                             <img class="d-block m-auto" src="images/logo.png" width="130px" alt="">
                             <p class="mt-2">Welcome to lorem..!</p>
-                            <div class="bg-main px-2 py-2 m-auto rounded-pill d-flex justify-content-between align-items-center"
+                            <div class="bg-main px-2 py-1 m-auto rounded-pill d-flex justify-content-between align-items-center"
                                 style="width: fit-content;">
-                                <div class="change_log get-login rounded-pill px-5 py-2 active" data-form="#login_form">
+                                <div class="change_log get-login rounded-pill px-5 py-1 active" data-form="#login_form">
                                     Login
                                 </div>
-                                <div class="change_log get-login rounded-pill px-5 py-2" data-form="#reg_form">
+                                <div class="change_log get-login rounded-pill px-5 py-1" data-form="#reg_form">
                                     Register
                                 </div>
                             </div>
@@ -53,12 +53,12 @@
                                 <p class="text-gray-500">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
-                                <div id="login_form" class="form_div">
+                                <div id="login_form" class="form_div px-5">
                                     <form action="">
                                         <div class="my-3">
                                             <label class="font-f-semi text-black-333">User name</label>
                                             <input type="text"
-                                                class=" my-2 form-control p-3 rounded-pill border_color_main"
+                                                class=" my-2 form-control px-3 py-2 rounded-pill border_color_main"
                                                 placeholder="Enter your User name">
                                         </div>
                                         <div class="my-3">
@@ -67,7 +67,7 @@
                                                 <i
                                                     class="fa-solid fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-4"></i>
                                                 <input type="text"
-                                                    class=" my-2 form-control p-3 rounded-pill border_color_main"
+                                                    class=" my-2 form-control px-3 py-2 rounded-pill border_color_main"
                                                     placeholder="Enter your Password">
                                             </div>
                                         </div>
@@ -80,44 +80,114 @@
                                                 Forgot Password ?
                                             </a>
                                         </div>
-                                        <button class="bg-main float-end rounded-pill px-5 py-2 my-3 d-block">
-                                            Login
-                                        </button>
+                                        <div class="d-flex justify-content-end">
+                                            <button class="bg-main rounded-pill px-5 py-2 my-3 d-block">
+                                                Login
+                                            </button>
+                                        </div>
                                     </form>
+                                    <div class="separator text-center mb-4 text-gray-500">
+                                        <span>ــــــــــــــــــــــــــ</span>
+                                        <span>OR</span>
+                                        <span>ــــــــــــــــــــــــــ</span>
+                                    </div>
+                                    <div class="social-login d-flex justify-content-center my-10">
+                                        <a href="#" class="btn border border-2 w-50 mx-2">
+                                            Facebook
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_236_2495)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M0.25 10.0558C0.25 15.0275 3.86083 19.1617 8.58333 20V12.7775H6.08333V10H8.58333V7.7775C8.58333 5.2775 10.1942 3.88917 12.4725 3.88917C13.1942 3.88917 13.9725 4 14.6942 4.11083V6.66667H13.4167C12.1942 6.66667 11.9167 7.2775 11.9167 8.05583V10H14.5833L14.1392 12.7775H11.9167V20C16.6392 19.1617 20.25 15.0283 20.25 10.0558C20.25 4.525 15.75 0 10.25 0C4.75 0 0.25 4.525 0.25 10.0558Z"
+                                                        fill="#2563EB" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_236_2495">
+                                                        <rect width="20" height="20" fill="white"
+                                                            transform="translate(0.25)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="btn border border-2 w-50 mx-2">
+                                            Google
+                                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M19.0011 10.1941C19.0011 9.47471 18.9415 8.94971 18.8126 8.40527H10.4297V11.6525H15.3503C15.2511 12.4594 14.7154 13.6747 13.5249 14.4913L13.5082 14.6L16.1587 16.6123L16.3424 16.6303C18.0288 15.1039 19.0011 12.858 19.0011 10.1941Z"
+                                                    fill="#4285F4" />
+                                                <path
+                                                    d="M10.4293 18.75C12.84 18.75 14.8638 17.9722 16.342 16.6305L13.5245 14.4916C12.7706 15.0068 11.7586 15.3666 10.4293 15.3666C8.06822 15.3666 6.06427 13.8402 5.34992 11.7305L5.24522 11.7392L2.48917 13.8295L2.45312 13.9277C3.92136 16.786 6.93723 18.75 10.4293 18.75Z"
+                                                    fill="#34A853" />
+                                                <path
+                                                    d="M5.34916 11.7302C5.16068 11.1858 5.05159 10.6024 5.05159 9.99967C5.05159 9.39686 5.16068 8.81355 5.33925 8.26911L5.33425 8.15316L2.54366 6.0293L2.45236 6.07186C1.84723 7.25798 1.5 8.58995 1.5 9.99967C1.5 11.4094 1.84723 12.7413 2.45236 13.9274L5.34916 11.7302Z"
+                                                    fill="#FBBC05" />
+                                                <path
+                                                    d="M10.4294 4.63331C12.1059 4.63331 13.2368 5.34303 13.8817 5.93613L16.4016 3.525C14.854 2.11528 12.84 1.25 10.4294 1.25C6.93725 1.25 3.92137 3.21387 2.45312 6.07218L5.34002 8.26944C6.0643 6.15972 8.06825 4.63331 10.4294 4.63331Z"
+                                                    fill="#EB4335" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div id="reg_form" class="form_div d-none">
                                     <form action="">
-                                        <div class="my-2">
-                                            <label class="font-f-semi text-black-333">User name</label>
-                                            <input type="text"
-                                                class=" my-2 form-control p-3 rounded-pill border_color_main"
-                                                placeholder="Enter your User name">
-                                        </div>
-                                        <div class="my-2">
-                                            <label class="font-f-semi text-black-333">Email</label>
-                                            <input type="email"
-                                                class=" my-2 form-control p-3 rounded-pill border_color_main"
-                                                placeholder="Enter your Email">
-                                        </div>
-                                        <div class="my-2">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <label class="font-f-semi text-black-333">Password</label>
-                                                    <div class="position-relative">
-                                                        <i
-                                                            class="fa-solid  fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                                        <input type="password"
-                                                            class=" my-2 form-control p-3 rounded-pill border_color_main"
-                                                            placeholder="Enter your Password">
-                                                    </div>
+                                        <div class="row">
+                                            <div class="my-1 col-8">
+                                                <label class="font-f-semi text-black-333">User name</label>
+                                                <input type="text"
+                                                    class="form-control px-3 py-2 rounded-pill border_color_main"
+                                                    placeholder="Enter your User name">
+                                            </div>
+                                            <div class="my-1 col-4">
+                                                <label class="font-f-semi text-black-333">Phone</label>
+                                                <input type="text"
+                                                    class="form-control px-3 py-2 rounded-pill border_color_main"
+                                                    placeholder="Enter your Phone">
+                                            </div>
+                                            <div class="my-1 col-12">
+                                                <label class="font-f-semi text-black-333">Email</label>
+                                                <input type="email"
+                                                    class=" my-1 form-control px-3 py-2 rounded-pill border_color_main"
+                                                    placeholder="Enter your Email">
+                                            </div>
+                                            <div class="col-6 my-1">
+                                                <label class="font-f-semi text-black-333">Country</label>
+                                                <div class="position-relative">
+                                                    <select
+                                                        class="my-2 form-control  px-3 py-2 rounded-pill border_color_main">
+                                                        <option selected disabled value="">Enter your Country</option>
+                                                        <option> Egypt </option>
+                                                        <option> Jorden </option>
+                                                        <option> Lebanon </option>
+                                                    </select>
                                                 </div>
-                                                <div class="col-6">
-                                                    <label class="font-f-semi text-black-333">Confirm password</label>
-                                                    <div class="position-relative">
-                                                        <input type="password"
-                                                            class=" my-2 form-control p-3 rounded-pill border_color_main"
-                                                            placeholder="Enter your Password">
-                                                    </div>
+                                            </div>
+                                            <div class="col-6 my-1">
+                                                <label class="font-f-semi text-black-333">
+                                                    City</label>
+                                                <div class="position-relative">
+                                                    <input type="text"
+                                                        class=" my-2 form-control px-3 py-2 rounded-pill border_color_main"
+                                                        placeholder="Enter your City">
+                                                </div>
+                                            </div>
+                                            <div class="col-6 my-1">
+                                                <label class="font-f-semi text-black-333">Password</label>
+                                                <div class="position-relative">
+                                                    <i
+                                                        class="fa-solid  fa-eye-slash position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                                    <input type="password"
+                                                        class=" my-2 form-control  px-3 py-2 rounded-pill border_color_main"
+                                                        placeholder="Enter your Password">
+                                                </div>
+                                            </div>
+                                            <div class="col-6 my-1">
+                                                <label class="font-f-semi text-black-333">Confirm
+                                                    password</label>
+                                                <div class="position-relative">
+                                                    <input type="password"
+                                                        class=" my-2 form-control px-3 py-2 rounded-pill border_color_main"
+                                                        placeholder="Enter your Password">
                                                 </div>
                                             </div>
                                         </div>
