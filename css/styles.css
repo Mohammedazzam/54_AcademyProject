@@ -404,6 +404,14 @@ nav.navbar {
 nav.navbar.no_header {
   top: 0;
 }
+nav.navbar.no_header ul {
+  background-color: #f9f9f9;
+}
+@media screen and (max-width: 1024px) {
+  nav.navbar.no_header ul {
+    background-color: transparent;
+  }
+}
 nav.navbar.nav_fixed {
   top: 0;
 }
