@@ -213,6 +213,21 @@ p {
 .link:hover {
   color: inherit;
 }
+.z-n1 {
+  z-index: -1;
+}
+.z-0 {
+  z-index: 0;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
 .ltr {
   direction: ltr;
 }
@@ -278,6 +293,11 @@ p {
   border-color: var(--second-color);
   --bs-border-color: var(--second-color);
 }
+.list-group-main li::marker {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 .border_dashed {
   border-style: dashed;
   --bs-border-style: dashed;
@@ -342,7 +362,7 @@ p {
   font-size: 12px;
 }
 .mt-n4 {
-  margin-top: -4rem;
+  margin-top: -4.5rem;
 }
 /* ++++++++++++++++++++++++++++++++++++++++++ End General classes ++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ------------------------------------------------ Start Index Page ------------------------------------------------------- */
@@ -555,6 +575,8 @@ footer ul li:hover {
   background-color: #9dccff4d;
 }
 
+#consulting_card .owl-nav,
+.team_work #team_work_carousel .owl-nav,
 .trainig_course_category #training_card .owl-nav,
 .blog_details_page #blog_details_carousel .owl-nav,
 .courses_city #city_card .owl-nav,
@@ -562,7 +584,8 @@ footer ul li:hover {
   text-align: right;
   direction: ltr;
 }
-
+#consulting_card .owl-nav button,
+.team_work #team_work_carousel .owl-nav button,
 .trainig_course_category #training_card .owl-nav button,
 .blog_details_page #blog_details_carousel .owl-nav button,
 .courses_city #city_card .owl-nav button,
@@ -576,6 +599,8 @@ footer ul li:hover {
   text-align: center;
   margin: 15px 5px;
 }
+#consulting_card .owl-nav button.disabled,
+.team_work #team_work_carousel .owl-nav button.disabled,
 .trainig_course_category #training_card .owl-nav button.disabled,
 .blog_details_page #blog_details_carousel .owl-nav button.disabled,
 .courses_city #city_card .owl-nav button.disabled,
@@ -858,10 +883,179 @@ footer ul li:hover {
 .consulting_main_section h1 {
   font-size: 72px;
 }
-
+.sec_card {
+  transition: all 0.2s ease-in-out;
+}
+.sec_card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.num-circle {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.num-circle span {
+  position: relative;
+}
+.num-circle span::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #00000033;
+  position: absolute;
+  left: 50%;
+  border-radius: 7px 0 0 0;
+  bottom: -5px;
+  transform: skewY(50deg);
+}
+#team_members .owl-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#team_members .owl-nav button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  transform: translateY(-100%);
+}
+#team_members .owl-nav button.disabled {
+  opacity: 0.4;
+}
+#team_members .owl-dots {
+  height: 3px;
+  background: #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+#team_members .owl-dots button {
+  width: 33%;
+}
+#team_members .owl-dots button.active {
+  background-color: #ff5f49;
+}
 @media screen and (max-width: 1024px) {
   .consulting_sec_title h1 {
     font-size: 35px;
   }
 }
+
+.consulting_slider_item {
+  box-shadow: inset 0px -3rem 130rem 50px rgb(0 0 0 / 59%) !important;
+  height: 600px;
+}
+.consulting_filter h1 {
+  font-size: 70px;
+}
+#consulting_card .card {
+  transition: all 0.2s ease-in-out;
+}
+#consulting_card .card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
 /*- - - - - - - - - - - - End consulting page - - - - - - - - - - - */
+/*- - - - - - - - - - - - Start details_blog page - - - - - - - - - - - */
+.details_blog .user_rounded img {
+  width: 80px;
+  height: 80px;
+}
+/*- - - - - - - - - - - - End details_blog page - - - - - - - - - - - */
+/*- - - - - - - - - - - - Start job  page - - - - - - - - - - - */
+.job_cards {
+  transition: all 0.2s ease-in-out;
+}
+
+.featured-card.bg_gradient {
+  background: linear-gradient(90deg, #fff6e6 0%, #ffffff 100%),
+    linear-gradient(0deg, #ffffff, #ffffff);
+}
+.job_pilot .c_img,
+.featured-card .c_img,
+.job_cards .c_img {
+  width: 80px;
+  height: 80px;
+  background-color: #e7f0fa;
+  transition: all 0.2s ease-in-out;
+}
+.job_cards:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.job_pilot .c_img {
+  background: #fff;
+}
+.job_pilot:hover .c_img,
+.job_cards:hover .c_img {
+  background-color: var(--main-color);
+}
+.job_cards .c_img i {
+  color: var(--main-color);
+}
+.job_pilot:hover .c_img i,
+.job_cards:hover .c_img i {
+  color: #e7f0fa;
+}
+
+.regester-card {
+  height: 280px;
+}
+.job_pilot .job_pilot_card:hover {
+  background-color: #fff;
+}
+.job_pilot a > img {
+  transform: translateX(-30%);
+}
+.job_pilot a > img.arrow_bottom {
+  transform: translate(-30%, 100%) rotateX(180deg);
+}
+
+.pagination ul {
+  list-style: none;
+  margin: 20px auto;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+.pagination ul li a i {
+  color: #99c2ff;
+}
+.pagination ul li:not(.arrow):hover {
+  background-color: #f1f2f4;
+}
+.pagination ul li.arrow:hover {
+  background-color: #99c2ff35;
+}
+.pagination ul li:hover i,
+.pagination ul li:hover a {
+  color: var(--main-color);
+}
+
+.pagination ul li a {
+  text-decoration: none;
+  color: #666666;
+  padding: 5px 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pagination ul li.active {
+  background-color: var(--main-color);
+}
+.pagination ul li.active a {
+  color: #fff;
+}
+
+/*- - - - - - - - - - - - End job  page - - - - - - - - - - - */

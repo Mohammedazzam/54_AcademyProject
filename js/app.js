@@ -138,12 +138,12 @@ $(function () {
 
         $('#main_slider').owlCarousel({
             //loop: true,
-            margin: 0,
+            margin: 15,
             nav: false,
-            dots: true,
+            dots: false,
             items: 1,
             loop: true,
-            autoplay:true,
+            // autoplay:true,
             autoplayTimeout: 2000,
         });
         $('#training_card').owlCarousel({
@@ -236,9 +236,12 @@ $(function () {
         });
         $('#team_work_carousel').owlCarousel({
             margin: 20,
-            nav: false,
+            nav: true,
             dots: false,
             autoplayTimeout: 2000,
+            navText: [
+                '<i class="fa-solid fa-xl fa-angle-left"></i>',
+                '<i class="fa-solid fa-xl fa-angle-right"></i>'],
             responsive: {
                 0: {
                     items: 2
@@ -248,6 +251,26 @@ $(function () {
                 },
                 900: {
                     items: 4
+                },
+                1400: {
+                    items: 4
+                }
+            }
+        });
+        $('#team_members').owlCarousel({
+            margin: 20,
+            stagePadding: 30,
+            nav: true,
+            dots: true,
+            navText: [
+                '<i class="fa-solid fa-xl fa-angle-left"></i>',
+                '<i class="fa-solid fa-xl fa-angle-right"></i>'],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
                 },
                 1400: {
                     items: 4
@@ -281,6 +304,26 @@ $(function () {
             autoplayTimeout: 2000,
         });
 
+        $('#consulting_card').owlCarousel({
+            margin: 30,
+            stagePadding: 30,
+            nav: true,
+            navText: [
+                '<i class="fa-solid fa-xl fa-angle-left"></i>',
+                '<i class="fa-solid fa-xl fa-angle-right"></i>'],
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1400: {
+                    items: 3
+                }
+            }
+        });
     });
 
 });
